@@ -34,6 +34,7 @@ Project_Bank
 ### Prerequisites
 - **C++ compiler**: Ensure a C++ compiler like GCC or MSVC is installed.
 - **CMake**: To build the project.
+- **Clone JSON library**: git clone https://github.com/nlohmann/json.git
 
 ### Build Instructions
 1. **Clone the Repository**:
