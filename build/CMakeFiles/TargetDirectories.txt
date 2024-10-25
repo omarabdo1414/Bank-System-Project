@@ -1,0 +1,3 @@
+C:/Users/Maydoum/OneDrive/Desktop/Omar/Project_Bank/build/CMakeFiles/Project_Bank.dir
+C:/Users/Maydoum/OneDrive/Desktop/Omar/Project_Bank/build/CMakeFiles/edit_cache.dir
+C:/Users/Maydoum/OneDrive/Desktop/Omar/Project_Bank/build/CMakeFiles/rebuild_cache.dir
