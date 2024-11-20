@@ -8,8 +8,6 @@
 #include "./bank.h"
 #include "./customer.h" // Include the Customer class
 #include "./MilesAccount.h" // Include MilesAccount class
-#include <map>
-#include <functional>
 #include <atomic>
 
 /**
@@ -35,10 +33,10 @@ void* operator new(size_t size)
  * 
  * @param ptr Pointer to the memory block to free.
  */
-void operator delete(void* ptr) noexcept
+void operator delete(void *memory, size_t size) noexcept
 {
     DeletedAllocationCount++;
-    free(ptr);
+    free(memory);
 }
 
 /**
@@ -82,7 +80,7 @@ void accountMenu(Customer& customer) {
         }
         else
         {
-            continue;
+            break;
         }
 
         switch (choice)
@@ -118,12 +116,13 @@ void accountMenu(Customer& customer) {
 int main() {
     Temp obj;
     bool loggedIn = false;  // Track if the user is logged in
+    bool running = true;    // Control the main loop
 
-    while (!loggedIn) {
+    while (!loggedIn && running) {
         firstPage();
         char choice;
         std::cin >> choice;
-
+        
         switch (choice) {
         case '1':
             if (obj.login()) {   // If login is successful, break out of the loop and go to accountMenu
@@ -139,16 +138,17 @@ int main() {
             obj.forget(); // Forget password, then redirect to first page
             break;
         case '4':
-            exit(0);      // Exit the application
+            running = false;      // Exit the application
+            break;
         default:
             std::cout << "Invalid choice. Please try again.\n";
         }
     }
-    
 
-    // Once logged in, proceed to account management
-    Customer customer;
-    accountMenu(customer);
+    if (loggedIn) {  // Only access the account menu if logged in
+        Customer customer;
+        accountMenu(customer);
+    }
 
     // Display number of allocations in the heap
     std::cout << "Allocations so far: " << AllocationCount.load() << std::endl;

@@ -298,4 +298,6 @@ CMakeFiles/Project_Bank.dir/SRC/login.cpp.obj: \
  C:/Users/Maydoum/OneDrive/Desktop/Omar/Project_Bank/json/include/nlohmann/ordered_map.hpp \
  C:/mingw64/include/c++/13.2.0/any \
  C:/Users/Maydoum/OneDrive/Desktop/Omar/Project_Bank/json/include/nlohmann/detail/macro_unscope.hpp \
- C:/Users/Maydoum/OneDrive/Desktop/Omar/Project_Bank/json/include/nlohmann/thirdparty/hedley/hedley_undef.hpp
+ C:/Users/Maydoum/OneDrive/Desktop/Omar/Project_Bank/json/include/nlohmann/thirdparty/hedley/hedley_undef.hpp \
+ C:/Users/Maydoum/OneDrive/Desktop/Omar/Project_Bank/Include/customer.h \
+ C:/Users/Maydoum/OneDrive/Desktop/Omar/Project_Bank/Include/bank.h

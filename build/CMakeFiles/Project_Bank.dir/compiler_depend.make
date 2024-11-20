@@ -612,6 +612,8 @@ CMakeFiles/Project_Bank.dir/SRC/customer.cpp.obj: C:/Users/Maydoum/OneDrive/Desk
   C:/mingw64/x86_64-w64-mingw32/include/wctype.h
 
 CMakeFiles/Project_Bank.dir/SRC/login.cpp.obj: C:/Users/Maydoum/OneDrive/Desktop/Omar/Project_Bank/SRC/login.cpp \
+  C:/Users/Maydoum/OneDrive/Desktop/Omar/Project_Bank/Include/bank.h \
+  C:/Users/Maydoum/OneDrive/Desktop/Omar/Project_Bank/Include/customer.h \
   C:/Users/Maydoum/OneDrive/Desktop/Omar/Project_Bank/Include/login.h \
   C:/Users/Maydoum/OneDrive/Desktop/Omar/Project_Bank/json/include/nlohmann/adl_serializer.hpp \
   C:/Users/Maydoum/OneDrive/Desktop/Omar/Project_Bank/json/include/nlohmann/byte_container_with_subtype.hpp \

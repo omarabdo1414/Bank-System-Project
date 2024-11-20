@@ -7,7 +7,7 @@ A console-based bank management system written in C++ that allows users to sign 
 - **Account Management**: Create Savings and Miles accounts, and view customer information.
 - **Memory Management Tracking**: Custom memory allocation and deallocation tracking with custom operators.
 
-## File Structure
+## File Structure for the project
 ```bash
 Project_Bank
 ├── Include
@@ -53,7 +53,7 @@ Project_Bank
 
 3. **Run the Application**:
    ```bash
-   ./BankSystemApp  # Replace with executable name if different
+   ./BankSystemApp  # Replace with executable name if it's different
    ```
 
 ## Usage
@@ -67,6 +67,12 @@ Project_Bank
 The application tracks memory allocations with custom `new` and `delete` operators to monitor:
 - Total allocations made.
 - Total deallocations performed.
+
+This is made to track the memory and optimize it as possible for better performance since the heap allocation is slower than the stack, so we should make it less and optimize it so nothing bad happens to our memory.
+
+So I keep tracking my memory allocation and I follow where the allocation is happening and enhance it if it's possible.
+
+When I know the number of allocations and deallocations that have been done, I can see if anything allocated is being deleted.
 
 ## Code Example
 ```cpp
